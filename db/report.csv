@@ -1,0 +1,2 @@
+,username,password,createdate,practicename,contactname,contactphone,contactemail,nodoctors,nolocations,MailingAddress1,MailingAddress2,MailingAddress3,MailingAddressCity,MailingAddressState,MailingAddressZip,BillingAddress1,BillingAddress2,BillingAddress3,BillingAddressCity,BillingAddressState,BillingAddressZip,PracticeType,PracticeAge,nopatients,EstSupplySpend,FiscalYearEnd
+0,test,test1234,2017-11-01,Test,Test,Test,test@test.com,1,1,123 Street Address,Test,,Test,CA,123,abc,,,c,,,Specialty,2 years,20,50000,1/1

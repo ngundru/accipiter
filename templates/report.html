@@ -1,0 +1,53 @@
+<html>
+  <head>
+    <title>Reporting Page</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+    	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+<body>     
+      <div class="container">
+         	<div id = "header"><header>
+        <h1 class="logo">Practice Hawk</h1>
+        	<strong><nav>
+          <ul class="menu">        
+		<li><a href="/upload?user={{user}}">Upload</a><li>
+		<li><a href="{{ url_for('login') }}">Logout</a></li>
+          </ul>
+        </nav></strong>
+    </header></div>
+<div id = "content">
+
+ <br><h1> Welcome to Practice Hawk {{ user }} </h1><br>
+	  <!--img src="/static/images/reports/{{user}}/report.png" alt="{{user}}" height="250" width="400"-->
+	  <!--img src="/static/images/reports/{{user}}/report2.png" alt="{{user}}" height="250" width="400"-->
+ <br>
+	  <!--img src="/static/images/reports/{{user}}/report3.png" alt="{{user}}" height="250" width="400"-->
+	  <!--img src="/static/images/reports/{{user}}/report4.png" alt="{{user}}" height="250" width="400"-->
+
+<h2><a href="/upload?user={{user}}">Please Upload your invoices here</a></h2>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+ <br>
+
+
+<section>  </section>
+
+<footer>
+    <strong><nav>
+       <ul class="menu">
+            <li><a href="{{ url_for('home') }}">About</a></li>
+            <li><a href="{{ url_for('login') }}">Contact</a></li>
+       </ul>
+     </nav></strong>
+</footer> 
+
+</div>
+  </body> 
+</html>

@@ -1,0 +1,51 @@
+<html>
+<head>
+    <title>Upload new File</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+  <body>
+<div id="container">
+<div id = "header"><header>
+        <h1 class="logo">Practice Hawk</h1>
+        <strong><nav>
+          <ul class="menu">
+		<li><a href="/report?user={{user}}">Reports</a></li>
+            	<li><a href="{{ url_for('login') }}">Logout</a></li>
+          </ul>
+        </nav></strong>
+    </header></div>
+
+    <div class="content">
+      {% block content %}
+      {% endblock %}
+	  <h3>Upload new File</h3>
+		<form method=post enctype=multipart/form-data>
+		<p><input type=file name=file>
+		<input type=submit value=Upload>
+		</form>
+    </div>
+<div class="container"><table><tr><td height="100"></td></tr></table></div>
+    <div class="container">
+	<h3 align="left">View Files</h3>
+
+{% for link in listoflinks %}
+    <a href="{{link[0]}}">  {{ link[1] }}</a><br>
+{% endfor %}
+
+</div>
+<section>  </section>
+<section>  </section>
+<div id="footer">
+<footer>
+        <strong><nav>
+          <ul class="menu">
+            <li><a href="{{ url_for('home') }}">About</a></li>
+            <li><a href="{{ url_for('login') }}">Contact</a></li>
+          </ul>
+        </nav></strong>
+   </footer> 
+</div>
+</div>
+</body>
+</html>

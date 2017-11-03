@@ -1,0 +1,45 @@
+<html>
+  <head>
+    <title>HomePage</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+  </head>
+<body>
+	<div id="container">
+		<div id = "header"><header>
+        <h1 class="logo"></h1>
+            <strong><nav>
+          <ul class="menu">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+          </ul>
+        </nav></strong>
+      
+</header></div>
+<div id = "content">
+
+<div class="row">
+  <div class="col-12"><img src="/static/images/logo.png" height=auto width=55% align="middle"></div> <!-- 25% -->
+  <div class="col-6"><aside><h2>Intelligent Advocacy</h2></aside></div>
+  <div class="col-6"><aside><h2>Watching Over Your Practice</h2></aside></div>
+  <h2><a href="{{ url_for('registration') }}">Click Here To Register For An Account</a><h2>
+  <div class="col-6"><aside></aside></div>
+</div>
+
+
+
+
+</div>
+<div id="footer">
+<footer>
+        <strong><nav>
+          <ul class="menu">
+            <li><a href="{{ url_for('home') }}">About</a></li>
+            <li><a href="{{ url_for('login') }}">Contact</a></li>
+          </ul>
+        </nav></strong>
+   </footer> 
+</div> 
+  </div>
+</body>
+</html>

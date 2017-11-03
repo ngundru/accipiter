@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Flask Intro</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--link href="static/bootstrap.min.css" rel="stylesheet" media="screen"-->
+	<link rel="stylesheet" href="{{ url_for('static', filename='css/main.css') }}">
+  </head>
+      <header>
+      <div class="container">
+        <h1 class="logo">Test Web App</h1>
+        <strong><nav>
+          <ul class="menu">
+            <li><a href="{{ url_for('home') }}">Home</a></li>
+            <li><a href="{{ url_for('login') }}">Login</a></li>
+          </ul>
+        </nav></strong>
+      </div>
+    </header>
+  <body>
+    <div class="container">
+      <h1>Welcome to Flask!</h2>
+	  <img src="\images\ngundrum.JPG" alt="testing" height="42" width="42">
+      <br>
+      <p>Click <a href="/">here</a> to go home.</p>
+    </div>
+  </body>
+</html>
